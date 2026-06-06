@@ -1,0 +1,64 @@
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake-hover:hover {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-12deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(-14deg) translate(4px, -4px);
+  }
+  50% {
+    transform: rotate(-10deg) translate(-4px, 4px);
+  }
+  75% {
+    transform: rotate(-13deg) translate(2px, -2px);
+  }
+}
+
+.wobble {
+  animation: wobble 3s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0% {
+    box-shadow:
+      0 0 5px #3b82f6,
+      0 0 10px #3b82f6;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #3b82f6,
+      0 0 40px #3b82f6;
+  }
+  100% {
+    box-shadow:
+      0 0 5px #3b82f6,
+      0 0 10px #3b82f6;
+  }
+}
+
+.hover-fancy:hover {
+  transform: scale(1.05) rotate(-2deg);
+  animation: pulse-glow 0.8s infinite alternate;
+}
