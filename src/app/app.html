@@ -1,20 +1,5 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div
-      class="flex h-screen items-center justify-center bg-[url('/assets/main-bg.webp')] bg-cover bg-center"
-    >
-      <router-outlet></router-outlet>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+<div
+  class="flex h-screen items-center justify-center bg-[url('assets/main-bg.webp')] bg-cover bg-center overflow-hidden relative"
+>
+  <router-outlet></router-outlet>
+</div>
