@@ -1,0 +1,22 @@
+@keyframes pulse-glow {
+  0% {
+    box-shadow:
+      0 0 5px #3b82f6,
+      0 0 10px #3b82f6;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #3b82f6,
+      0 0 40px #3b82f6;
+  }
+  100% {
+    box-shadow:
+      0 0 5px #3b82f6,
+      0 0 10px #3b82f6;
+  }
+}
+
+.hover-fancy:hover {
+  transform: scale(1.05) rotate(-2deg);
+  animation: pulse-glow 0.8s infinite alternate;
+}
