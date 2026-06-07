@@ -20,7 +20,6 @@
 
   @case (1) {
     <div>
-   
       <div
         data-aos="zoom-in"
         class="absolute top-20 left-20 w-80 h-80 bg-[url('/assets/wwm.webp')] bg-contain bg-no-repeat rotate-16 wobble"
@@ -31,13 +30,11 @@
         class="absolute top-10 right-10 w-80 h-80 bg-[url('/assets/minecraft.webp')] bg-contain bg-no-repeat rotate-6 wobble"
       ></div>
 
-    
       <div
         data-aos="zoom-in"
         class="absolute bottom-0 left-20 w-80 h-80 bg-[url('/assets/stardew.webp')] bg-contain bg-no-repeat rotate-12 wobble"
       ></div>
 
-    
       <div
         data-aos="zoom-in"
         class="absolute bottom-0 right-20 w-80 h-80 bg-[url('/assets/thesims4.webp')] bg-contain bg-no-repeat rotate-7 wobble"
@@ -53,10 +50,11 @@
       <div class="flex mt-4 gap-12">
         <button
           data-aos="fade-right"
+          (click)="gotoForm()"
           class="flex px-6 py-2 rounded-full border border-blue-300 text-blue-300 hover:bg-blue-500 hover:text-white hover:border-white/50 transition justify-between items-center hover-fancy"
         >
           <span class="font-semibold gap-6">
-            MAU LAH!
+            MAU BANGETT!
             <fa-icon icon="heart"></fa-icon>
           </span>
         </button>
@@ -82,19 +80,6 @@
   @default {
     <h1 class="text-2xl text-white">Belum ada sequence</h1>
   }
-
-  <!-- <div
-    data-aos="fade-up"
-    class="rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-10 shadow-2xl"
-  >
-    <h2 class="text-3xl font-bold text-white mb-4">Glass Morphism</h2>
-    <p class="text-gray-200 mb-6">Modern frosted glass effect</p>
-    <button
-      class="px-6 py-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition"
-    >
-      UI Background
-    </button>
-  </div> -->
 }
 
 <p-toast></p-toast>

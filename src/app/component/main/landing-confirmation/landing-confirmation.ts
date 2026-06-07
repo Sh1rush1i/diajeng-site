@@ -4,6 +4,7 @@ import { ToastModule } from 'primeng/toast';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-confirmation',
@@ -19,6 +20,7 @@ export class LandingConfirmation {
   constructor(
     library: FaIconLibrary,
     private messageService: MessageService,
+    private router: Router,
   ) {
     library.addIconPacks(fas);
   }
@@ -52,5 +54,9 @@ export class LandingConfirmation {
     });
 
     this.isDeclined = true;
+  }
+
+  gotoForm() {
+    this.router.navigate(['/diisi-ya-diajeng-cantik']);
   }
 }
