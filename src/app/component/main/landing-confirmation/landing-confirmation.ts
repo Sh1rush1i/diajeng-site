@@ -5,6 +5,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import confetti from 'canvas-confetti';
 
 @Component({
   selector: 'app-landing-confirmation',
@@ -27,6 +28,11 @@ export class LandingConfirmation {
 
   nextSequence(): void {
     this.isNextSequence++;
+
+    if (this.isNextSequence === 2) {
+      confetti({ particleCount: 300, angle: 60, spread: 200, origin: { x: 0 } });
+      confetti({ particleCount: 300, angle: 120, spread: 200, origin: { x: 1 } });
+    }
   }
 
   runAway(btn: HTMLElement) {
