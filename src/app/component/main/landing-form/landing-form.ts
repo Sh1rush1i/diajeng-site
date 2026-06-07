@@ -7,7 +7,7 @@ import { DatePickerModule } from 'primeng/datepicker';
 import { MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
 import { Toast } from 'primeng/toast';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+
 
 @Component({
   selector: 'app-landing-form',
@@ -19,7 +19,6 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
     FloatLabelModule,
     DatePickerModule,
     Toast,
-    FaIconComponent,
   ],
   templateUrl: './landing-form.html',
   styleUrl: './landing-form.css',

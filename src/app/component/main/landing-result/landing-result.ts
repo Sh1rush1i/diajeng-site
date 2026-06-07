@@ -47,12 +47,13 @@ export class LandingResult {
   }
 
   callMawl() {
-    const number = '087757639686';
+    const number = '6287757639686';
+    // const number = '121212121';
     const message = `Mas Maula, nanti kita main ${this.itemForDisplay?.dataMainDiajeng?.game?.name} ini ya kapannya ${
       this.itemForDisplay?.dataMainDiajeng?.date
         ? formatDate(this.itemForDisplay.dataMainDiajeng.date, 'dd MMMM yyyy : HH:mm', 'id-ID')
         : ''
-    }, ditunggu diajeng ya mas 🪷🪷🪷 ~`;
+    }, ditunggu diajeng ya mas ~ ~`;
 
     const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
