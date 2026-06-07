@@ -6,11 +6,19 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { DatePickerModule } from 'primeng/datepicker';
 import { MessageService } from 'primeng/api';
 import { Router } from '@angular/router';
+import { Toast } from 'primeng/toast';
 
 @Component({
   selector: 'app-landing-form',
   standalone: true,
-  imports: [FormsModule, CommonModule, AutoCompleteModule, FloatLabelModule, DatePickerModule],
+  imports: [
+    FormsModule,
+    CommonModule,
+    AutoCompleteModule,
+    FloatLabelModule,
+    DatePickerModule,
+    Toast,
+  ],
   templateUrl: './landing-form.html',
   styleUrl: './landing-form.css',
   providers: [MessageService],
@@ -51,7 +59,8 @@ export class LandingForm {
     if (!this.selectedItem.game && !this.selectedItem.name) {
       this.messageService.add({
         severity: 'error',
-        summary: 'Harus diisi dong semua input fieldnya > _ <',
+        summary: 'Diisi semua dulu dong diajeng ~',
+        detail: 'Harus diisi dong semua input fieldnya > _ <',
       });
       return;
     }
